@@ -133,7 +133,8 @@ function getData(T_offset,T,path)
         global c = combine(groupby(dfm, :date),
         [i => mean for i in names(dfm)[9:end-1]]
         )
-        c = c[:,2:end]
+        #c = c[:,2:end]
+        c = c[:,3:end]
         c = replace!(convert(Matrix, c), missing=>0) .* 1 .*hcat(ones(1,2), repeat([4],1,3), ones(1,7))
     end
 
