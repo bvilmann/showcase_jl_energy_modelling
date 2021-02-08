@@ -55,6 +55,8 @@ However, the rigid loading of all the data serves as documentation on how the en
 If you are interested in sharing ideas, open an issue. If you have changes the files, also open an issue or PR. It is not sure whether changes will be implemented because it is not the purpose of this repository to be a julia package from which energy modelling tasks can be called.
 
 # Technical remarks
+
+### Solving time dependent on optimization method chosen:
 Solution time regarding the models vary on the chosen optimization method. Here is some benchmarking of the performance based on a average of 10 runs per data point. Abbreviations can be ![mapped here](https://github.com/bvilmann/showcase_jl_energy_modelling#mainjl). 
 ![solve_time](https://github.com/bvilmann/showcase_jl_energy_modelling/blob/main/plots/sol_time.png)
 
@@ -64,6 +66,7 @@ Processor        Intel(R) Core(TM) i7-7500U CPU @2.70GHz 2.90 GHz
 Installed RAM    8.00 GB (7.89 GB usable)
 ```
 
+### Flow chart
 Here is a psuedo-technical flow chart:
 ![flow_chart](https://github.com/bvilmann/showcase_jl_energy_modelling/blob/main/plots/Julia_Flow_Diagram(3).png)
 
