@@ -16,10 +16,10 @@ The energy model is based on 3 Julia files and gets data from excel file:
 ### `main.jl`
 This is the file from which the energy model is being called. It includes some options for the model:
 ```
-Flow_loss     = false                        # Include flow constant flow losses at lines?
-MIP_runtime   = false                        # Enable minimum down and up time constraint. Optimization includes MIP if true
-MIP_unit      = true                         # Enable unit activation constraint. Optimization includes MIP if true
-nl            = false                        # Enables non-linear modelling
+Flow_loss     = false                        # FL: Include flow constant flow losses at lines?
+MIP_runtime   = false                        # RT: Enable minimum down and up time constraint. Optimization includes MIP if true
+MIP_unit      = true                         # UA: Enable unit activation constraint. Optimization includes MIP if true
+nl            = false                        # NL: Enables non-linear modelling
 silent        = false                        # Enable output from JuMP model while optimizing?
 T_range       = 2                            # Date range (can be integer or tuple of two dates with format "YYYY-mm-dd")
 T_range       = ("2019-06-24","2019-06-30")  # Date range (can be integer or tuple of two dates with format "YYYY-mm-dd")
@@ -55,7 +55,7 @@ However, the rigid loading of all the data serves as documentation on how the en
 If you are interested in sharing ideas, open an issue. If you have changes the files, also open an issue or PR. It is not sure whether changes will be implemented because it is not the purpose of this repository to be a julia package from which energy modelling tasks can be called.
 
 # Technical remarks
-Solution time regarding the models vary on the chosen optimization method. Here is some benchmarking of the performance based on a average of 10 runs per data point.
+Solution time regarding the models vary on the chosen optimization method. Here is some benchmarking of the performance based on a average of 10 runs per data point. Abbreviations can be ![mapped here](https://github.com/bvilmann/showcase_jl_energy_modelling#mainjl). 
 ![solve_time](https://github.com/bvilmann/showcase_jl_energy_modelling/blob/main/plots/sol_time.png)
 
 The benchmarking is performed on:
