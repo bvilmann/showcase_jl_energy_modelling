@@ -47,14 +47,14 @@ Contains all the data used for the model. Open it and see the different paramete
 
 # Q & A
 ### How to get started
-Download the repository and run `main.jl`. After pre-compiling packages for the program, an input for the directory where you have located the repository is required.
+Download the repository and run `main.jl`. After pre-compiling packages for the program, an input for the directory where you have located the repository is required. After that, the model optimizes and find a solution. Some plotting features are outcommented for inspiration on how to represent the data from the model. Enjoy!
 
 ### I am using other OS than Windows?
 The script has not been tested on anything else than Windows, so we cannot guarantee any kind of performance on those platforms.
 
 ### This is really slow and could be done faster?!
-The program is slow while loading the data. Actually not much data is actually being used in the end via the structs (`State`, `Plant`, and `Line`) compared to the vast amount being loaded from the excel file `data.xlsx`. Maybe the loading of sheets from `data.xlsx` could be done faster but that could be a task for you to get familiar with Julia if you aren't already?
-However, the rigid loading of all the data serves as documentation on how the energy model is preparing data for the model.
+The program is slow while loading the data. Actually, not much data is actually being used in the end via the structs (`State`, `Plant`, and `Line`) compared to the vast amount being loaded from the excel file `data.xlsx`. Maybe the loading of sheets from `data.xlsx` could be done faster but that could be a task for you to get familiar with Julia if you aren't already?
+However, the rigid loading of all the data and then constructing the final parameters for the model serves as documentation on how the energy model is preparing data for the model.
 
 ### I want to help?
 If you are interested in sharing ideas, open an issue. If you have changes the files, also open an issue or PR. It is not sure whether changes will be implemented because it is not the purpose of this repository to be a julia package from which energy modelling tasks can be called.
