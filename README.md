@@ -1,10 +1,9 @@
 # What is showcase_jl_energy_modelling ?
 ### Scope of the repository
 This repository is for energy modelling the unit commitment problem with Julia (and JuMP) is build during a 6 ECTS course (Project Lab Renewable and Sustainable Energy Systems) at the Chair of Renewable and Sustainable Energy Systems (ENS) @ Technical University of Munich (TUM).
-
-It models Germany for a period of time in 2019. 
-
 The repository serves mainly as a reference and for inspiration on how to get started with energy modelling in Julia. The optimization methods includes LP, MIP, NLP and MINLP.
+
+It models Germany for a period of time in 2019. Further details can be read in the report `PROPENS - LP Model with Julia.pdf`.
 
 Here is a dashboard trying to sum up the outcome of the energy model:
 
@@ -38,9 +37,8 @@ Contains the control flow for energy modelling (handling different constraints) 
 ### `plots.jl`
 Plot functions used for documenting results of the energy model are stored in this file.
 
-### `plots.jl`
-
-
+### `data.xlsx`
+Contains all the data used for the model. Open it and see the different parameters.
 
 # Q & A
 ### How to get started
