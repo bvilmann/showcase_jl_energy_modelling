@@ -14,6 +14,13 @@ Here is a dashboard trying to sum up the outcome of the energy model:
 
 ![model](https://github.com/bvilmann/showcase_jl_energy_modelling/blob/main/plots/gif_summer_4.gif)
 
+# Comparison to real data
+Here is a comparison. Biggest difference is the lower coal production. The model penalizes life cycle CO2 equivalent emissions which might be a reason for this.
+The real data is based on real generation data, which includes import and export. The model is constrained to solve for a load balance from the national demand. The generation profile differes due to this.
+
+![res_summer_github](https://user-images.githubusercontent.com/50515426/110318965-838ebf80-800e-11eb-9e93-bbb624950679.png)
+The data is based on the interval: 2019/06/24 - 2019/06/30.
+
 # Content
 
 The energy model is based on 3 Julia files and gets data from excel file:
