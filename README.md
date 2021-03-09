@@ -71,6 +71,11 @@ If you are interested in sharing ideas, open an issue. If you have changes the f
 
 # Technical remarks
 
+### Choice of solvers
+For LP and MIP modeling, the `CPLEX` (commercial) has been used. `Cbc` (Open-source) should be able to do the same but crashed on the final model. CPLEX is free for persons in academia.
+
+For NLP and MINLP modeling, a mix of solvers has been used. `Juniper` (open-source) as the main solver, `Ipopt` (open-source) for NL operations, and `Cbc` (open-source) for MIP.
+
 ### Solving time dependent on optimization method chosen:
 Solution time regarding the models vary on the chosen optimization method. Here is some benchmarking of the performance based on a average of 10 runs per data point. Abbreviations can be ![mapped here](https://github.com/bvilmann/showcase_jl_energy_modelling#mainjl). 
 ![solve_time](https://github.com/bvilmann/showcase_jl_energy_modelling/blob/main/plots/sol_time.png)
