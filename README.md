@@ -4,7 +4,10 @@ This repository is build during a 6 ECTS course (Project Lab Renewable and Susta
 
 The repository serves mainly as a reference and for inspiration on how to get started with energy modelling in Julia. The optimization methods includes LP, MIP, NLP and MINLP.
 
-### What does it do?
+### What is Julia?
+![Julia](https://docs.julialang.org/en/v1/) is a relative new, open-source, and cost-free programming language from 2012. It is faster than Python and MATLAB for vector operations and bases on a lot of intuition. ![This article](https://arxiv.org/abs/1312.1431) benchmarks speed of Julia next to C, C++, Python (PyPy), and MATLAB.
+
+### What does this repository do do?
 
 The program is solving the 'unit commitment problem'. The main purpose of the project was to show the capabilities of energy modelling with Julia. Therefore, realism of the model is second priority. The first is to make a 'simple as possible' demonstration on how energy modelling with Julia would look like.
 
@@ -59,7 +62,7 @@ Download the repository and run `main.jl`. After pre-compiling packages for the 
 ### I am using other OS than Windows?
 The script has not been tested on anything else than Windows, so we cannot guarantee any kind of performance on those platforms.
 
-### This is really slow and could be done faster?!
+### The loading of the data is really slow and could be done faster?!
 The program is slow while loading the data. Actually, not much data is actually being used in the end via the structs (`State`, `Plant`, and `Line`) compared to the vast amount being loaded from the excel file `data.xlsx`. Maybe the loading of sheets from `data.xlsx` could be done faster but that could be a task for you to get familiar with Julia if you aren't already?
 However, the rigid loading of all the data and then constructing the final parameters for the model serves as documentation on how the energy model is preparing data for the model.
 
